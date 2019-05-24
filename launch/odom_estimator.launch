@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="icl_stationary" type="odom_estimator_node_station" name="odom_estimator_node_station" output="screen" >
+
+	  <param name="bodyName" value="turtlebot3"/>
+    <param name="cameraName" value="turtlebot3/camera"/>
+    <param name="markerName" value="board"/>
+
+    <param name="pfix" value="0.105638"/>
+	  <param name="pfiy" value="0.0702751"/>
+	  <param name="pfiz" value="0.0414916"/>
+
+    <param name="qfiw" value="0.722352"/>
+    <param name="qfix" value="-0.691162"/>
+    <param name="qfiy" value="0.0217651"/>
+    <param name="qfiz" value="0.00289808"/>
+
+    <!-- cutoff frequencies -->
+    <param name="fpi" value="50.0"/>
+    <param name="fqi" value="50.0"/>
+    <param name="fvi" value="50.0"/>
+    <param name="fwi" value="50.0"/>
+
+  </node>
+  
+  
+  <node pkg="odom_estimator" type="odom_node" name="odom_node_cam" output="screen">
+    <rosparam param="names"> ["turtlebot3/camera"] </rosparam>
+  </node>
+
+</launch>

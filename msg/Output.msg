@@ -1,0 +1,12 @@
+Header header
+geometry_msgs/Pose pose
+geometry_msgs/Twist twist
+geometry_msgs/Point32[] piks
+uint16[] remaining
+uint16[] remainingIndex
+uint8[] converged
+float32 height
+geometry_msgs/Point32 n
+float32 d
+uint8 needToShutdown
+nav_msgs/Odometry odom

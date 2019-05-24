@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- estimator node -->
+  <node pkg="icl_stationary" type="patch_estimator_node_station" name="patch_estimator_node_station" output="screen" >
+
+	  <!-- forward camera -->
+	  <param name="cameraName" value="turtlebot3/camera"/>
+	  <param name="minFeaturesBad" value="8"/>
+
+	  <!-- min and max depths-->
+	  <param name="zmin" value="0.5"/>
+	  <param name="zmax" value="6.0"/>
+
+    <!-- integration window -->
+    <param name="tau" value="5.0"/>
+
+	  <!-- cut off frequencies-->
+	  <param name="fq" value="10.0"/>
+    <param name="fp" value="1.5"/>
+    <param name="ft" value="10.0"/>
+    <param name="fn" value="0.5"/>
+    <param name="fd" value="50.0"/>
+
+    <param name="alwaysSearch" value="true"/>
+    <param name="saveExp" value="true"/>
+    <param name="expName" value="s16"/>
+
+  </node>
+
+</launch>

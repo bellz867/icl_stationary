@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- turtlebot bringup -->
+  <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+  
+  <!-- turtlebot xbox control -->
+  <include file="$(find turtlebot_teleop)/launch/xbox360_teleop.launch"/>
+  
+</launch>

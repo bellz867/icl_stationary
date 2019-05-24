@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- odom estimator -->
+  <include file="$(find icl_stationary)/launch/odom_estimator.launch"/>
+
+  <!-- keyframe estimator -->
+  <include file="$(find icl_stationary)/launch/patch_estimator.launch"/>
+
+</launch>

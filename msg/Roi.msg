@@ -1,0 +1,11 @@
+Header header
+int16 minx
+int16 maxx
+int16 miny
+int16 maxy
+float32 nx
+float32 ny
+float32 nz
+float32 dk
+uint8 patchShutdown
+uint8 dkEstimated
